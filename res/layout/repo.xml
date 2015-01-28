@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="　レポート提出状況/評価　　　　　　　　　科目習得試験の合否"
+        android:textColor="#0000FF"
+        android:gravity="center"
+        android:textSize="29sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="#00FFFFFF"
+        android:text="　" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="　　登録"
+        android:textSize="30sp"
+          android:layout_marginTop="30dp"  />
+
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="　　確認"
+        android:textSize="30sp"
+          android:layout_marginTop="30dp"  />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/report"
+         android:layout_marginLeft="250dp"
+        android:layout_marginTop="50dp"
+         />
+
+</LinearLayout>
