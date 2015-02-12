@@ -30,7 +30,15 @@
         android:textSize="30sp"
           android:layout_marginTop="30dp"  />
 
-
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　　更新"
+        android:background="#00FFFFFF"
+         android:textSize="30sp"
+          android:layout_marginTop="30dp"
+        />
 
     <Button
         android:id="@+id/button3"

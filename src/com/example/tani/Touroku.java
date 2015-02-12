@@ -45,11 +45,8 @@ private void add() throws SQLException{
 	Database db = new Database(this);
 	SQLiteDatabase sdb = db.getWritableDatabase();
 	String sub = editText.getText().toString();
-	//int idx = spinner1.getSelectedItemPosition();
 	String A = (String)spinner1.getSelectedItem();
-	//int idx2 = spinner2.getSelectedItemPosition();
 	String B = (String)spinner2.getSelectedItem();
-	//int idx3 = spinner3.getSelectedItemPosition();
 	String S = (String)spinner3.getSelectedItem();
 
 
@@ -60,7 +57,7 @@ private void add() throws SQLException{
 	values.put("a", A);
 	values.put("b", B);
 	values.put("s", S);
-	long rowID = sdb.insert("tani",null, values);
+	long rowID = sdb.insert("score",null, values);
 	editText.setText("");
 	if(rowID == -1){
 		db.close();

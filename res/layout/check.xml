@@ -14,14 +14,13 @@
         android:text="科目"
         android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="240dp"
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="-20dp"
-        android:ems="10"
-        android:hint="科目名を入力してください" />
+        android:layout_weight="0.00"
+         android:layout_marginLeft="130dp"
+        android:layout_marginTop="-20dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -32,17 +31,14 @@
         android:text="日付"
         android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="230dp"
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="-25dp"
-        android:ems="10"
-        android:hint="日付を入力してください" >
-
-        <requestFocus />
-    </EditText>
+        android:layout_weight="0.00"
+        android:calendarViewShown="false"
+         android:layout_marginLeft="130dp"
+        android:layout_marginTop="-25dp" />
 
     <Button
         android:id="@+id/button1"

@@ -36,7 +36,7 @@ public class Confir extends Activity{
 		mydb = hlpr.getWritableDatabase();
 		ListView listView = (ListView)findViewById(R.id.listView1);
 		try{
-			Cursor cr = mydb.rawQuery("Select * From tani Order By id desc", null);
+			Cursor cr = mydb.rawQuery("Select * From score Order By id desc", null);
 			cr.moveToFirst();
 			if(cr.getCount() > 0){
 				data = new Integer[cr.getCount()];
@@ -66,7 +66,7 @@ public class Confir extends Activity{
 			final Toast toast_f=Toast.makeText(this, "削除できませんでした。", Toast.LENGTH_LONG);
 			int ret;
 			try{
-				ret = sdb.delete("tani", "id = "+ id, null);
+				ret = sdb.delete("score", "id = "+ id, null);
 				view();
 			}finally{
 				db.close();

@@ -32,6 +32,15 @@ public class Repo extends Activity {
 	                startActivity(intent);
 	            }
 	        });
+	        Button Ibtn3 = (Button)findViewById(R.id.button2);
+	        Ibtn3.setOnClickListener(new OnClickListener() {
+	            public void onClick(View v) {
+	                // Sub 画面を起動
+	                Intent intent = new Intent();
+	                intent.setClassName("com.example.tani", "com.example.tani.Update");
+	                startActivity(intent);
+	            }
+	        });
 	    }
 
 }
